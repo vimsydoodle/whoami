@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta28
+kind: Config
+metadata:
+  name: whoami
+build:
+  artifacts:
+  - image: whoami
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - deployment.yaml
+portForward:
+- resourceType: service
+  resourceName: whoami
+  port: 8000
