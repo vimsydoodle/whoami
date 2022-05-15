@@ -13,6 +13,8 @@ Simple HTTP docker service that prints it's container ID
     I'm 1d5da65f3705 time now: 2022-05-15 15:40:02.5668707 +0000 UTC m=+11.412986601
 
     go mod init github.com/vimsydoodle/whoami
+
+    go mod init github.com/vimsydoodle/whoami
     go mod tidy
 
     skaffold init  --generate-manifests
@@ -24,3 +26,5 @@ Simple HTTP docker service that prints it's container ID
 
     skaffold.yaml? Yes
     Generated manifest deployment.yaml was written
+
+    go mod init github.com/vimsydoodle/whoami
