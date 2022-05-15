@@ -12,19 +12,15 @@ Simple HTTP docker service that prints it's container ID
     $ curl $(hostname --all-ip-addresses | awk '{print $1}'):9000
     I'm 1d5da65f3705 time now: 2022-05-15 15:40:02.5668707 +0000 UTC m=+11.412986601
 
+    go mod init github.com/vimsydoodle/whoami
+    go mod tidy
 
-```
+    skaffold init  --generate-manifests
 
-go mod init github.com/vimsydoodle/whoami
-go mod tidy
+    Configuration skaffold.yaml was written
+    You can now run [skaffold build] to build the artifacts
+    or [skaffold run] to build and deploy
+    or [skaffold dev] to enter development mode, with auto-redeploy
 
-skaffold init  --generate-manifests
-
-Configuration skaffold.yaml was written
-You can now run [skaffold build] to build the artifacts
-or [skaffold run] to build and deploy
-or [skaffold dev] to enter development mode, with auto-redeploy
-
-skaffold.yaml? Yes
-Generated manifest deployment.yaml was written
-```
+    skaffold.yaml? Yes
+    Generated manifest deployment.yaml was written
