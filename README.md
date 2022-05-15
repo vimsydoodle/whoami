@@ -25,4 +25,3 @@ or [skaffold dev] to enter development mode, with auto-redeploy
 
 skaffold.yaml? Yes
 Generated manifest deployment.yaml was written
-
