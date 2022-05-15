@@ -10,7 +10,8 @@ build:
 deploy:
   kubectl:
     manifests:
-    - deployment.yaml
+    - app-deployment.yaml
+    - app-service.yaml
 portForward:
 - resourceType: service
   resourceName: whoami
